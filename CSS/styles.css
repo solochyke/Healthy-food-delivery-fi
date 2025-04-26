@@ -1,1 +1,240 @@
+/* Located in /cdn-cgi/styles/cf.errors.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f0f0;
+    color: #333;
+}
 
+#cf-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.cf-alert {
+    background-color: #fce77d;
+    color: #383838;
+    padding: 1em;
+    display: none; /* Initially hidden, shown by script if cookies are disabled */
+}
+
+.cf-alert-error {
+    background-color: #f44336;
+    color: white;
+}
+
+#cf-error-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cf-wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cf-header {
+    margin-bottom: 2em;
+}
+
+.cf-error-overview h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.cf-error-overview h2 {
+    font-size: 1.5em;
+    color: #777;
+}
+
+.cf-section {
+    margin-bottom: 2em;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.cf-highlight {
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+}
+
+.cf-screenshot-container {
+    min-height: 100px;
+    background-color: #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 1.2em;
+}
+
+.cf-screenshot-container.cf-screenshot-full {
+    width: 100%;
+}
+
+.cf-no-screenshot.error::before {
+    content: "🚫";
+    font-size: 3em;
+}
+
+.cf-columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cf-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.cf-column h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.cf-column p {
+    line-height: 1.6;
+}
+
+.cf-error-footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    padding: 1em 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.cf-error-footer p {
+    margin: 0;
+}
+
+.cf-footer-item {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.cf-footer-separator {
+    margin: 0 0.5em;
+}
+
+.cf-footer-item a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.cf-footer-item a:hover {
+    text-decoration: underline;
+}
+
+.cf-footer-ip-reveal-btn {
+    background: none;
+    border: none;
+    color: #2196f3;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+}
+
+.cf-footer-ip-reveal-btn:hover {
+    text-decoration: underline;
+}
+
+.text-13 {
+    font-size: 13px;
+}
+
+.font-semibold {
+    font-weight: bold;
+}
+
+.sm\:block {
+    display: none;
+}
+
+.sm\:mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.sm\:hidden {
+    display: inline;
+}
+
+.sm\:text-left {
+    text-align: center; /* Default to center, override for small screens */
+}
+
+.w-240 {
+    width: 240px;
+}
+
+.lg\:w-full {
+    width: 100%;
+}
+
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-0 {
+    border-width: 0;
+}
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-gray-300 {
+    border-color: #d1d5db;
+}
+
+@media (min-width: 640px) {
+    .sm\:block {
+        display: block;
+    }
+    .sm\:hidden {
+        display: none;
+    }
+    .sm\:text-left {
+        text-align: left;
+    }
+}
